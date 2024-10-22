@@ -1,0 +1,137 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --primary: hsl(25, 97%, 53%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Overpass,  sans-serif;
+    background-color: var(--very-dark-blue);
+    user-select: none;
+}
+
+.rating-container {
+    background-color: var(--dark-blue);
+    min-width: 337px;
+    max-width: 420px;
+    border: 1px solid black;
+    border-radius: 0.9rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.star-container {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(128, 128, 128, 0.091);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.star-icon {
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+h2 {
+    color: var(--white);
+}
+
+p {
+    color: var(--light-grey);
+}
+
+.rates-container {
+    color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    
+}
+
+.rate {
+    background-color: rgba(128, 128, 128, 0.091);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate:hover {
+    background-color: var(--primary);
+    color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+.rate.active {
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+}
+
+button {
+    color: var(--very-dark-blue);
+    background-color: var(--primary);
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:active {
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+}
+
+
+.message-container {
+    background-color:var(--dark-blue);
+    min-width: 337px;
+    max-width: 420px;
+    border: 1px solid black;
+    border-radius: 0.9rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    gap: 1rem;
+    
+}

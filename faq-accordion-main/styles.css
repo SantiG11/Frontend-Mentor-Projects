@@ -1,0 +1,119 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: var(--light-pink) url("/assets/images/background-pattern-desktop.svg") no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-color: var(--white);
+    width: 45%;
+    min-width: 20rem;
+    margin-top: 11%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 30px;
+    
+}
+
+.container-head {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 4rem;
+    gap: 1rem;
+    
+}
+
+.star-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+h1 {
+    color: var(--dark-purple);
+    font-size: 45px;
+}
+
+.accordions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.accordion {
+    border-bottom: 1px solid var(--light-pink);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 2% 0;
+}
+
+.accordion:last-child {
+    border-bottom: none;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--dark-purple);
+}
+
+.question-text {
+    user-select: none;
+    width: 80%;
+}
+
+.question-text:hover, .question-text:active {
+    color: #AD28EB;
+    cursor: pointer;
+}
+
+
+.minus-icon, .plus-icon{
+    width: 1.438rem;
+    height: 1.438rem;
+}
+
+
+.answer {
+    color: var(--grayish-purple);
+    font-weight: 400;
+    line-height: 1.3rem;
+    max-width: 60ch;
+}
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image:url("/assets/images/background-pattern-mobile.svg");
+    }
+}
